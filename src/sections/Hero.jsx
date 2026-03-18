@@ -14,20 +14,20 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Node.js",
-  "GraphQL",
   "PostgreSQL",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
   "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "Gemini API",
+  "Docker",
+  "Tailwind CSS",
+  "REST APIs",
+  "GraphQL",
+  "Vapi",
+  "LeetCode",
+  "System Design",
   "Git",
-  "GitHub Actions",
+  "GitHub",
+  "Vercel",
 ];
 
 export const Hero = () => {
@@ -53,9 +53,8 @@ export const Hero = () => {
               backgroundColor: "#20B2A6",
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out infinite`,
+              animation: `slow-drift ${15 + Math.random() * 20
+                }s ease-in-out infinite`,
               animationDelay: `${Math.random() * 5}s`,
             }}
           />
@@ -70,36 +69,49 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Full Stack Developer • AI Enthusiast
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                I build{" "}
+                <span className="text-primary glow-text">high-performance</span>
                 <br />
-                experiences with
+                web apps that help
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  businesses grow 🚀
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                I'm Priyanshu Keshri — a Full Stack Developer specializing in
+                modern web apps, AI integration, and performance optimization. I
+                help startups and businesses build scalable, fast, and
+                user-friendly applications.
+              </p>
+              <p className="text-sm text-primary/80 font-medium animate-fade-in animation-delay-300">
+                ✔ Solved 500+ DSA problems &nbsp;|&nbsp; ✔ Real-world production
+                experience &nbsp;|&nbsp; ✔ Open to freelance &amp; full-time roles
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Start a Project <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <AnimatedBorderButton
+                href="/resume.pdf"
+                download="Priyanshu_Keshri_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Download className="w-5 h-5" />
-                Download CV
+                Download Resume
               </AnimatedBorderButton>
             </div>
 
@@ -107,13 +119,15 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Github, href: "https://github.com/PRIYANSHUKESHRI01" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/priyanshu-keshri-1b86a230b/" },
                 { icon: Twitter, href: "#" },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -133,8 +147,8 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  src="/profile-photo.png"
+                  alt="Priyanshu Keshri"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
@@ -143,15 +157,15 @@ export const Hero = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">
-                      Available for work
+                      Open to opportunities
                     </span>
                   </div>
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">500+</div>
                   <div className="text-xs text-muted-foreground">
-                    Years Exp.
+                    DSA Solved
                   </div>
                 </div>
               </div>

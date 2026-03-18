@@ -1,41 +1,42 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Memora AI",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+      "Created an AI-powered productivity assistant to help users organize, store, and retrieve information efficiently using intelligent context understanding.",
+    image: "/projects/memora-mockup.png",
+    tags: ["Next.js", "AI APIs", "Supabase"],
+    link: "https://memora-ai-red.vercel.app/",
+    github: "https://github.com/PRIYANSHUKESHRI01/memora-ai",
   },
   {
-    title: "E-Commerce Platform",
+    title: "SensAI",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+      "Built an AI-powered career platform delivering personalized insights, skill-gap analysis, and resume optimization with real-time feedback under 500ms.",
+    image: "/projects/sensai-mockup.png",
+    tags: ["Next.js", "Gemini API", "PostgreSQL", "Prisma"],
+    link: "https://sensai-psi-two.vercel.app/",
+    github: "https://github.com/PRIYANSHUKESHRI01/sensai",
   },
   {
-    title: "AI Writing Assistant",
+    title: "PrepWise",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+      "Developed a real-time AI voice interview system that evaluates candidates using speech processing and structured analytics.",
+    image: "/projects/prepwise-mockup.png",
+    tags: ["Next.js", "Vapi", "Gemini API", "Serverless"],
+    link: "https://prepwise-five-psi.vercel.app/",
+    github: "https://github.com/PRIYANSHUKESHRI01/prepwise",
   },
   {
-    title: "Project Management Tool",
+    title: "Startup Benefits",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+      "A platform providing various benefits and resources for startups.",
+    image: "/projects/startupBenefits-mockup.png",
+    tags: ["Next.js", "MongoDB"],
+    link: "https://startup-benefits-lemon.vercel.app/",
+    github: "https://github.com/PRIYANSHUKESHRI01/startup_benefits",
   },
 ];
 
@@ -59,8 +60,8 @@ export const Projects = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            A selection of my recent work — AI-powered platforms and full-stack
+            applications that solve real-world problems.
           </p>
         </div>
 
@@ -88,12 +89,16 @@ export const Projects = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <Github className="w-5 h-5" />
@@ -104,9 +109,14 @@ export const Projects = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-semibold group-hover:text-primary transition-colors hover:underline"
+                  >
                     {project.title}
-                  </h3>
+                  </a>
                   <ArrowUpRight
                     className="w-5 h-5 
                   text-muted-foreground group-hover:text-primary

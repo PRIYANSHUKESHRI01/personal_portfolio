@@ -4,35 +4,27 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
+      "Worked on real-world projects, solved production issues, and delivered scalable solutions with a strong focus on performance and quality.",
+    author: "InfoTechBrains Cloud",
+    role: "Internship — Full Stack Developer",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      "/infotechBrains.png",
   },
   {
     quote:
-      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-    author: "Michael Rodriguez",
-    role: "Product Manager, Digital Solutions",
+      "Built and shipped AI-powered applications that tackle real-world challenges — with fast delivery, clean code, and a focus on scalable architecture.",
+    author: "Independent Projects",
+    role: "Full Stack & AI Development",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=100&fit=crop",
   },
   {
     quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-    author: "Emily Watson",
-    role: "Engineering Lead, StartUp Labs",
+      "Consistent problem-solving dedication with 500+ DSA solutions. Finalist at Odoo × Adani Hackathon 2026 and team lead at Smart India Hackathon.",
+    author: "Competitive Programming",
+    role: "LeetCode • GFG • Codeforces",
     avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-  },
-  {
-    quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-    author: "David Kim",
-    role: "CEO, Innovation Hub",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop",
   },
 ];
 
@@ -69,19 +61,19 @@ export const Testimonials = () => {
           text-sm font-medium tracking-wider 
           uppercase animate-fade-in"
           >
-            What People Say
+            Highlights
           </span>
           <h2
             className="text-4xl md:text-5xl 
           font-bold mt-4 mb-6 animate-fade-in 
           animation-delay-100 text-secondary-foreground"
           >
-            Kind words from{" "}
+            Work that{" "}
             <span
               className="font-serif italic 
             font-normal text-white"
             >
-              amazing people.
+              speaks for itself.
             </span>
           </h2>
         </div>
@@ -128,12 +120,12 @@ export const Testimonials = () => {
               <div className="flex gap-2">
                 {testimonials.map((_, idx) => (
                   <button
+                    key={idx}
                     onClick={() => setActiveIdx(idx)}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      idx === activeIdx
-                        ? "w-8 bg-primary"
-                        : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeIdx
+                      ? "w-8 bg-primary"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                      }`}
                   />
                 ))}
               </div>

@@ -1,28 +1,29 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Cpu, Rocket, Trophy } from "lucide-react";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Full Stack Development",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building scalable and production-ready web applications.",
+  },
+  {
+    icon: Cpu,
+    title: "AI Integration",
+    description:
+      "Integrating AI APIs to build intelligent features and automation.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Performance Optimization",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Improving speed, scalability, and system efficiency.",
   },
   {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
+    icon: Trophy,
+    title: "Problem Solving",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Solved 500+ DSA problems across multiple platforms.",
   },
 ];
 
@@ -49,35 +50,36 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a Computer Science student and Full Stack Developer focused
+                on building real-world, impactful applications.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I specialize in Next.js, React, Node.js, and AI-powered systems.
+                My approach is simple — build fast, scalable, and user-focused
+                products that solve real problems.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                During my internship, I worked on a production-level application
+                where I resolved real user issues, optimized performance, and
+                collaborated with engineers in a live environment.
+              </p>
+              <p>
+                I enjoy solving complex problems, improving system performance,
+                and continuously learning new technologies in AI and system
+                design.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My mission is to build fast, scalable, and user-focused products
+                that make a real difference — for clients, users, and businesses
+                alike."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div
