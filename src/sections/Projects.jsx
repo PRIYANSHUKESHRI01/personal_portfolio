@@ -5,9 +5,9 @@ const projects = [
   {
     title: "Memora AI",
     description:
-      "Created an AI-powered productivity assistant to help users organize, store, and retrieve information efficiently using intelligent context understanding.",
+      "AI-powered study assistant that lets users upload PDFs and ask context-aware questions, acting like a personal knowledge base for quick learning.",
     image: "/projects/memora-mockup.png",
-    tags: ["Next.js", "AI APIs", "Supabase"],
+    tags: ["Next.js", "Gemini API", "Supabase", "Prisma"],
     link: "https://memora-ai-red.vercel.app/",
     github: "https://github.com/PRIYANSHUKESHRI01/memora-ai",
   },
@@ -32,9 +32,9 @@ const projects = [
   {
     title: "Startup Benefits",
     description:
-      "A platform providing various benefits and resources for startups.",
+      "Built a full-stack platform where startups can discover and claim curated SaaS deals, with access control, verification-based unlocking, and a personalized dashboard.",
     image: "/projects/startupBenefits-mockup.png",
-    tags: ["Next.js", "MongoDB"],
+    tags: ["Next.js", "Node.js", "MongoDB", "JWT"],
     link: "https://startup-benefits-lemon.vercel.app/",
     github: "https://github.com/PRIYANSHUKESHRI01/startup_benefits",
   },
