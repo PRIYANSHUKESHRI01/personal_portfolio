@@ -1,6 +1,6 @@
 const experiences = [
   {
-    period: "Nov 2025 — Feb 2026",
+    period: "Nov 2025 — Jan 2026",
     role: "Full Stack Developer Intern",
     company: "InfoTechBrains Cloud Pvt. Ltd",
     description:
